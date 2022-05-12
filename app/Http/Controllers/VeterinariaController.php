@@ -15,7 +15,7 @@ class VeterinariaController extends Controller
         return view('veterinarias.index')->with('veterinarias', Veterinaria::all());
     }
 
-
+    visual studio
     public function create()
     {
         return view('veterinarias.create');
@@ -32,7 +32,7 @@ class VeterinariaController extends Controller
             'numTelefonico'    => 'required',
             'correo'           => 'required',
             'redesSociales'    => 'required',
-            
+
         ]);
 
         Veterinaria::create([
@@ -81,4 +81,3 @@ class VeterinariaController extends Controller
 }
 
 }
-
