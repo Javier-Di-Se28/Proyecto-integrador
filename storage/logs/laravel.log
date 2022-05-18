@@ -334,3 +334,172 @@
 #64 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
 #65 {main}
 "} 
+[2022-05-18 16:25:38] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:25:45] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:26:05] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:26:28] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:27:24] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:33:00] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:34:00] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:34:22] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:34:56] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:37:43] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:39:31] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:39:47] production.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2022-05-18 16:40:53] local.ERROR: Class "Spatie\Ignition\Config\IgnitionConfig" not found {"exception":"[object] (Error(code: 0): Class \"Spatie\\Ignition\\Config\\IgnitionConfig\" not found at C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php:139)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\spatie\\laravel-ignition\\src\\IgnitionServiceProvider.php(46): Spatie\\LaravelIgnition\\IgnitionServiceProvider->registerIgnition()
+#1 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(686): Spatie\\LaravelIgnition\\IgnitionServiceProvider->register()
+#2 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Spatie\\LaravelIgnition\\IgnitionServiceProvider))
+#3 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(663): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#4 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#5 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Proyecto-integrador\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 C:\\xampp\\htdocs\\Proyecto-integrador\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
