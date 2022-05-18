@@ -15,7 +15,6 @@ class VeterinariaController extends Controller
         return view('veterinarias.index')->with('veterinarias', Veterinaria::all());
     }
 
-    visual studio
     public function create()
     {
         return view('veterinarias.create');
@@ -31,7 +30,7 @@ class VeterinariaController extends Controller
             'servicios'        => 'required',
             'numTelefonico'    => 'required',
             'correo'           => 'required',
-            'redesSociales'    => 'required',
+            'redesSociales'    => 'required'
 
         ]);
 
@@ -40,9 +39,9 @@ class VeterinariaController extends Controller
             'sucursal'           => $request->sucursal,
             'direccion'          => $request->direccion,
             'servicios'          => $request->servicios,
-            'numTefonico'        => $request->numTelefonico,
+            'numTelefonico'      => $request->numTelefonico,
             'correo'             => $request->correo,
-            'redesSociales'      => $request->redesSociales,
+            'redesSociales'      => $request->redesSociales
         ]);
 
         return redirect()->route('veterinaria.index');
@@ -72,11 +71,11 @@ class VeterinariaController extends Controller
     public function destroy(Veterinaria $veterinaria)
     {
         $veterinaria->delete();
-        return redirect()->route('Veterinaria.index');
+        return redirect()->route('veterinaria.index');
     }
     public function datatable()
 {
-    $Computadoras = Veterinaria::all();
+    $Veterinarias = Veterinaria::all();
     return view('veterinarias.datatable', compact('veterinarias'));
 }
 

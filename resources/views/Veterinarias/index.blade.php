@@ -44,7 +44,7 @@
                         <th>{{ $veterinaria->nombre }}</th>
                         <td>{{ $veterinaria->sucursal }}</td>
                         <td>{{ $veterinaria->direccion}}</td>
-                        <td>{{ $veterinaria->nervicios}}</td>
+                        <td>{{ $veterinaria->servicios}}</td>
                         <td>{{ $veterinaria->numTelefonico }}</td>
                         <td>${{ $veterinaria->correo }} </td>
                         <td>${{ $veterinaria->redesSociales }} </td>

@@ -26,14 +26,14 @@
 <table id="example" class="display" style="width:100%">
         <thead>
             <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Descripcion/th>
-                <th>Precio de compra</p></th>
-                <th>Precio de venta</th>
-                <th>Stock</th>
-                <th>Ganancia</th>
-                <th>Acciones</th>
+                <th>nombre</th>
+                <th>sucursal</th>
+                <th>direccion</th>
+                <th>servicios</th>
+                <th>numTelefonico</th>
+                <th>correo</th>
+                <th>redesSociales</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -41,13 +41,13 @@
         @forelse(veterinarias as $veterinaria)
 
             <tr>
-                <td>{{$veterinaria =>marca}}</td>
-                <td>{{$veterinaria =>modelo}}</td>
-                <td>{{$veterinaria =>descripcion}}</td>
-                <td>{{$veterinaria =>precioCompra}}M.N</td>
-                <td>{{$veterinaria =>precioVenta}}M.N</td>
-                <td>{{$veterinaria =>stock}} Unidades</td>
-                <td>${{ $veterinaria =>precioDeVenta = $veterinaria=>precioDecompra}} M.N </td>
+                <td>{{$veterinaria =>nombre}}</td>
+                <td>{{$veterinaria =>sucursal}}</td>
+                <td>{{$veterinaria =>direccion}}</td>
+                <td>{{$veterinaria =>servicios}}</td>
+                <td>{{$veterinaria =>numTelefonico}}</td>
+                <td>{{$veterinaria =>correo}} </td>
+                <td>${{$veterinaria =>redesSociales}}</td>
                 <td> </td>
                 @empty
                 <h3>No hay datos en la base de datos</h3>
@@ -57,14 +57,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Descripcion/th>
-                <th>Precio de compra</p></th>
-                <th>Precio de venta</th>
-                <th>Stock</th>
-                <th>Ganancia</th>
-                <th>Acciones</th>
+            <th>nombre</th>
+                <th>sucursal</th>
+                <th>direccion</th>
+                <th>servicios</th>
+                <th>numTelefonico</th>
+                <th>correo</th>
+                <th>redesSociales</th>
+                
             </tr>
         </tfoot>
     </table>
