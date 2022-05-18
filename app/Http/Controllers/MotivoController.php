@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Computadora;
 use App\Http\Requests\StoreMotivoRequest;
 use App\Http\Requests\UpdateMotivoRequest;
-use App\Models\Veterinaria;
+use App\Models\Motivo;
 use League\CommonMark\Delimiter\Delimiter;
 
 class MotivoController extends Controller
