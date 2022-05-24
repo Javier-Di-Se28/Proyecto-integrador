@@ -19,9 +19,9 @@ class CreateVeterinariasTable  extends Migration
             $table->string('sucursal', 150);
             $table->string('direccion' , 150);
             $table->string('servicios' , 150);
-            $table->string('NumTelefonico');
-            $table->string('correo');
-            $table->string('redesSociales');
+            $table->string('NumTelefonico' , 129);
+            $table->string('correo' , 123);
+            $table->string('redesSociales' , 123);
             $table->timestamps();
         });
     }

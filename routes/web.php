@@ -5,11 +5,12 @@ use App\Http\Controllers\DuenioController;
 
 use App\Http\Controllers\VeterinariaController;
 
+use App\Http\Controllers\VeterinariaController;
 use Illuminate\Support\Facades\Auth;
 
 Route::resources([
     'veterinaria'   => VeterinariaController::class,
-    
+
 ]);
 
 Route::resource(

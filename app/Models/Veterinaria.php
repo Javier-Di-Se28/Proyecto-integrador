@@ -16,7 +16,7 @@ class Veterinaria extends Model
         'servicios',
         'numTelefonico',
         'correo',
-        'redesSociales',
+        'redesSociales'
     ];
 }
 

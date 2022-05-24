@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Computadora;
 use App\Http\Requests\StoreMotivoRequest;
 use App\Http\Requests\UpdateMotivoRequest;
+use App\Models\Motivo;
 use League\CommonMark\Delimiter\Delimiter;
 
 class MotivoController extends Controller
@@ -12,13 +12,13 @@ class MotivoController extends Controller
 
     public function index()
     {
-        return view('computadoras.index')->with('computadoras', Computadora::all());
+        return view('veterinaria.index')->with('veterinaria', Veterinaria::all());
     }
 
 
     public function create()
     {
-        return view('computadoras.create');
+        return view('veterinaria.create');
     }
 
 
@@ -36,39 +36,39 @@ class MotivoController extends Controller
             'urgente'           => $request->disponible
         ]);
 
-        return redirect()->route('computadora.index');
+        return redirect()->route('veterinaria.index');
     }
 
 
-    public function show(Computadora $computadora)
+    public function show(Veterinaria $veterinaria)
     {
-    return view ('computadoras.show' , compact('computadora'));
+    return view ('veterinaria.show' , compact('veterinaria'));
 
 
     }
 
 
-    public function edit(Computadora $computadora)
-    {
-        //
-    }
-
-
-    public function update(UpdateComputadoraRequest $request, Computadora $computadora)
+    public function edit(Veterinaria $veterinaria)
     {
         //
     }
 
 
-    public function destroy(Computadora $computadora)
+    public function update(UpdateVeterinariaRequest $request, Veterinaria $veterinaria)
     {
-        $computadora->delete();
-        return redirect()->route('computadora.index');
+        //
+    }
+
+
+    public function destroy(Veterinaria $veterinaria)
+    {
+        $veterinaria->delete();
+        return redirect()->route('veterinaria.index');
     }
     public function datatable()
 {
-    $Computadoras = Computadora::all();
-    return view('computadoras.datatable', compact('computadoras'));
+    $Veterinaria = Veterinaria::all();
+    return view('veterinaria.datatable', compact('veterinaria'));
 }
 
 }
