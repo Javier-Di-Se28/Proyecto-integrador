@@ -14,7 +14,7 @@ crossorigin="anonymous">
   
     <table class="table table-light">
     <thead class="thead-light">
-        //contenedor de colores
+        
         <div class="container" style="background-color: paleturquoise;" >
         <h1> La casita de Goofy</h1>
         </div>
@@ -34,7 +34,7 @@ crossorigin="anonymous">
                 </tr>   
                 </thead> 
 </tbody>
-@foreach($duenios as $duenio)
+@foreach($duenio as $duenio)
 <tr>
                         <th>{{ $duenio->id }}</th>
                         <th>{{ $duenio->nombre }}</th>

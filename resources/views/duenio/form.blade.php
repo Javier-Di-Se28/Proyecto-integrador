@@ -4,9 +4,9 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 crossorigin="anonymous">
 
 
-        <div class="container" style="background-color: orange;" >
-        <h1> VETERINARIA GOOFY</h1>
-        <h1>{{$modo}} MASCOTA</h1>
+        <div class="container" style="background-color: paleturquoise;" >
+        <h1> La casita de Goofy</h1>
+        <h1>{{$modo}} Dueño</h1>
 
         @if(count($errors)>0)
         <div class="alert alert-danger role="alert">
@@ -23,63 +23,42 @@ crossorigin="anonymous">
           </div>
           <div class="form-group">
           <div>
-           <label for="animal">Animal: </label>   
-            <input type="text" class="form-control" name="animal" value="{{ isset($animale->animal)?$animale->animal:''}}" id="animal">
+           <label for="nombre">Nombre: </label>   
+            <input type="text" class="form-control" name="nombre" value="{{ isset($duenio->nombre)?$duenio->nombre:''}}" id="nombre">
             </div>
             </div>
 
             <div class="form-group">
             <div>
-            <label for="tipoAnimal">TipoAnimal: </label> 
-            <input type="text"  class="form-control" name="tipoAnimal" value="{{ isset($animale->tipoAnimal)?$animale->tipoAnimal:''  }}" id="tipoAnimal">
+            <label for="numerotelefonico">Numero Telefonico: </label> 
+            <input type="text"  class="form-control" name="numerotelefonico" value="{{ isset($duenio->numerotelefonico)?$duenio->numerotelefonico:''  }}" id="numerotelefonico">
             </div>
             </div>
 
             <div class="form-group">
             <div>
-            <label for="nombre">Nombre: </label> 
-            <input type="text"  class="form-control" name="nombre" value="{{ isset($animale->nombre)?$animale->nombre:''}}" id="nombre">
+            <label for="colonia">Colonia: </label> 
+            <input type="text"  class="form-control" name="colonia" value="{{ isset($duenio->colonia)?$duenio->colonia:''}}" id="colonia">
             </div>
             </div>
 
             <div class="form-group">
             <div>
-            <label for="peso">Peso: </label> 
-            <input type="text"  class="form-control" name="peso" value="{{ isset($animale->peso)?$animale->peso:''}}" id="peso">
+            <label for="calle">Calle: </label> 
+            <input type="text"  class="form-control" name="calle" value="{{ isset($duenio->calle)?$duenio->calle:''}}" id="calle">
             </div>
             </div>
           
             <div class="form-group">
-            <label for="raza">Raza: </label> 
-            <input type="text"  class="form-control" name="raza" value="{{ isset($animale->raza)?$animale->raza:''}}" id="raza">
+            <label for="numexterior">Num Exterior: </label> 
+            <input type="text"  class="form-control" name="numexterior" value="{{ isset($duenio->numexterior)?$duenio->numexterior:''}}" id="numexterior">
             </div>
             </div>
             
             <div class="form-group">
             <div>
-            <label for="tamaño">Tamaño: </label> 
-            <input type="text"  class="form-control" name="tamaño" value="{{ isset($animale->tamaño)?$animale->tamaño:''}}" id="tamaño">
-            </div>
-            </div>
-
-            <div class="form-group">
-            <div>
-            <label for="tipoPelo">TipoPelo: </label> 
-            <input type="text"  class="form-control" name="tipoPelo" value="{{ isset($animale->tipoPelo)?$animale->tipoPelo:''}}" id="tipoPelo">
-            </div>
-            </div>
-           
-
-            <div class="form-group">
-            <div>
-            <label for="edad">Edad: </label> 
-            <input type="text"  class="form-control" name="edad" value="{{ isset($animale->edad)?$animale->edad:''}}" id="edad">
-            </div>
-            </div>
-            <div class="form-group">
-            <div>
-            <label for="sexo" > Sexo: </label> 
-            <input  type="text"class="form-control" name="sexo" value="{{ isset($animale->sexo)?$animale->sexo:''}}" id="sexo">
+            <label for="numinterior">Num Interior: </label> 
+            <input type="text"  class="form-control" name="numinterior" value="{{ isset($duenio->numinterior)?$duenio->numinterior:''}}" id="numinterior">
             </div>
             </div>
             <br> 
