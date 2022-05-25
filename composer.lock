@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12524947d8c752f84bc21aaaede06bfa",
+    "content-hash": "8d5cd6d5e2725b2ad634413f879d2e74",
     "packages": [
         {
             "name": "brick/math",
@@ -572,16 +572,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.2",
+            "version": "7.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4"
+                "reference": "74a8602c6faec9ef74b7a9391ac82c5e65b1cdab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ac1ec1cd9b5624694c3a40be801d94137afb12b4",
-                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/74a8602c6faec9ef74b7a9391ac82c5e65b1cdab",
+                "reference": "74a8602c6faec9ef74b7a9391ac82c5e65b1cdab",
                 "shasum": ""
             },
             "require": {
@@ -676,7 +676,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.4.2"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.3"
             },
             "funding": [
                 {
@@ -692,7 +692,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-20T14:16:28+00:00"
+            "time": "2022-05-25T13:24:33+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -895,6 +895,18 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
+            "version": "v9.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "5356f15d008c1b23088ccf21a5fb4aa2f87af034"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/5356f15d008c1b23088ccf21a5fb4aa2f87af034",
+                "reference": "5356f15d008c1b23088ccf21a5fb4aa2f87af034",
+=======
             "version": "v9.13.0",
             "source": {
                 "type": "git",
@@ -905,6 +917,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/87b6cc8bc41d1cf85c7c1401cddde8570a3b95bb",
                 "reference": "87b6cc8bc41d1cf85c7c1401cddde8570a3b95bb",
+>>>>>>> f3a255ea7c9ddcf96ee733f86eeee2b5bc5d7966
                 "shasum": ""
             },
             "require": {
@@ -1070,7 +1083,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
+<<<<<<< HEAD
+            "time": "2022-05-24T14:03:46+00:00"
+=======
             "time": "2022-05-17T14:07:43+00:00"
+>>>>>>> f3a255ea7c9ddcf96ee733f86eeee2b5bc5d7966
         },
         {
             "name": "laravel/sanctum",
@@ -5400,6 +5417,18 @@
         },
         {
             "name": "laravel/sail",
+<<<<<<< HEAD
+            "version": "v1.14.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sail.git",
+                "reference": "c049316f9bcb02598607307f18b514b66202b639"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/c049316f9bcb02598607307f18b514b66202b639",
+                "reference": "c049316f9bcb02598607307f18b514b66202b639",
+=======
             "version": "v1.14.6",
             "source": {
                 "type": "git",
@@ -5410,6 +5439,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/sail/zipball/f00f3a8f83e71436d473cda7700ae7b4b68d26cc",
                 "reference": "f00f3a8f83e71436d473cda7700ae7b4b68d26cc",
+>>>>>>> f3a255ea7c9ddcf96ee733f86eeee2b5bc5d7966
                 "shasum": ""
             },
             "require": {
@@ -5456,7 +5486,11 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
+<<<<<<< HEAD
+            "time": "2022-05-21T17:14:14+00:00"
+=======
             "time": "2022-05-18T15:56:59+00:00"
+>>>>>>> f3a255ea7c9ddcf96ee733f86eeee2b5bc5d7966
         },
         {
             "name": "mockery/mockery",
@@ -7400,6 +7434,8 @@
             "time": "2020-09-28T06:39:44+00:00"
         },
         {
+<<<<<<< HEAD
+=======
             "name": "spatie/backtrace",
             "version": "1.2.1",
             "source": {
@@ -7696,6 +7732,7 @@
             "time": "2022-05-05T15:53:24+00:00"
         },
         {
+>>>>>>> f3a255ea7c9ddcf96ee733f86eeee2b5bc5d7966
             "name": "theseer/tokenizer",
             "version": "1.2.1",
             "source": {
@@ -7755,5 +7792,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
