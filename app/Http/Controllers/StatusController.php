@@ -8,79 +8,82 @@ use App\Http\Requests\UpdateStatusRequest;
 
 class StatusController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+        return view('status.index')->with('status', Status::all());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
-        //
+        return view('status.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreStatusRequest  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(StoreStatusRequest $request)
     {
-        //
+        $request->validate([
+            'registrarstatus'       => 'required',
+            'veterinaria'           => 'required',
+            'cita'                  => 'required',
+            'hora'                  => 'required',
+            'dia'                   => 'required',
+            'descripcion'           => 'required',
+            'tratamiento'           => 'required',
+            'observaciones'         => 'required',
+        ]);
+
+        Status::create([
+            'registrarstatus'   => $request->registrastatus,
+            'veterinaria'       => $request->veterinaria,
+            'cita'              => $request->cita,
+            'hora'              => $request->hora,
+            'dia'               => $request->dia,
+            'descripcion'       => $request->descripcion,
+            'tratamiento'       => $request->tratamiento,
+            'observaciones'     => $request->obervaciones
+        ]);
+
+        return redirect()->route('status.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Status  $status
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(Status $status)
     {
-        //
+        return view('status.show', compact('status'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Status  $status
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit(Status $status)
     {
-        //
+        return view('status.edit', compact('status'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateStatusRequest  $request
-     * @param  \App\Models\Status  $status
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(UpdateStatusRequest $request, Status $status)
     {
-        //
+        $request->validate([
+            'registrarstatus'       => 'required',
+            'veterinaria'           => 'required',
+            'cita'                  => 'required',
+            'hora'                  => 'required',
+            'dia'                   => 'required',
+            'descripcion'           => 'required',
+            'tratamiento'           => 'required',
+            'observaciones'         => 'required'
+        ]);
+
+        $status->update($request->all());
+
+        return redirect()->route('status.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Status  $status
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy(Status $status)
     {
-        //
+        $status->delete();
+
+        return redirect()->route('status.index');
     }
 }
