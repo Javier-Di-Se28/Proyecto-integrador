@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DuenioController;
 
 use App\Http\Controllers\VeterinariaController;
 use App\Http\Controllers\StatusController;
@@ -25,3 +26,5 @@ Route::resources([
 Route::get('/', function () {
     return view('welcome');
 });
+
+
