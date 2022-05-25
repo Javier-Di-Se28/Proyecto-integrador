@@ -1,7 +1,10 @@
 @extends('layout.layout')
 @section('content')
 
-    <section class="hero is-link">
+   
+
+
+<section class="hero is-link">
         <div class="hero-body">
             <p class="title">
                 Formulario para registrar el status de la mascota
@@ -70,4 +73,7 @@
         </form>
     </section>
 
-@endsection
+    <body bgcolor="paleturquoise">
+    @endsection
+    </body>
+

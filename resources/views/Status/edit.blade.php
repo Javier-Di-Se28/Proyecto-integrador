@@ -51,4 +51,6 @@
         </form>
     </section>
 
-@endsection
+    <body bgcolor="paleturquoise">
+    @endsection
+    </body>
