@@ -35,6 +35,9 @@ crossorigin="anonymous">
             </div>
             </div>
 
+            
+                <div class= "column">  
+            
             <div class="form-group">
             <div>
             <label for="colonia">Colonia: </label> 
@@ -48,7 +51,8 @@ crossorigin="anonymous">
             <input type="text"  class="form-control" name="calle" value="{{ isset($duenio->calle)?$duenio->calle:''}}" id="calle">
             </div>
             </div>
-          
+                
+
             <div class="form-group">
             <label for="numexterior">Num Exterior: </label> 
             <input type="text"  class="form-control" name="numexterior" value="{{ isset($duenio->numexterior)?$duenio->numexterior:''}}" id="numexterior">
