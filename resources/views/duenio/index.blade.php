@@ -34,7 +34,7 @@ crossorigin="anonymous">
                 </tr>   
                 </thead> 
 </tbody>
-@foreach($duenio as $duenio)
+@foreach($duenios as $duenio)
 <tr>
                         <th>{{ $duenio->id }}</th>
                         <th>{{ $duenio->nombre }}</th>
@@ -58,10 +58,7 @@ crossorigin="anonymous">
                         </td> 
  </tr>
 
- <center>
- <div>    
- <img class="is-rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBE6OTnocdHOVtBOB19-qK6NYaFDD6rcQSWA&usqp=CAU">
-</div>
+
  @endforeach
 </body>
 </table>
