@@ -1,7 +1,10 @@
 @extends('layout.layout')
 @section('content')
 
-    <section class="hero is-link">
+   
+
+
+<section class="hero is-link">
         <div class="hero-body">
             <p class="title">
                 Formulario para registrar el status de la mascota
@@ -30,7 +33,7 @@
 
                     <div>
                         <label for="">Dia:</label>
-                        <select class="input is-large" " name="registrarstatus" id="">
+                        <select class="input is-large" " name="dia" id="">
                             <option value="Lunes">Lunes</option>
                             <option value="Martes">Martes</option>
                             <option value="Miercoles">Miercoles</option>
@@ -70,4 +73,7 @@
         </form>
     </section>
 
-@endsection
+    <body bgcolor="paleturquoise">
+    @endsection
+    </body>
+

@@ -24,23 +24,15 @@ class StatusController extends Controller
     public function store(StoreStatusRequest $request)
     {
         $request->validate([
-            'registrarstatus'       => 'required',
-            'veterinaria'           => 'required',
-            'cita'                  => 'required',
             'hora'                  => 'required',
             'dia'                   => 'required',
-            'descripcion'           => 'required',
             'tratamiento'           => 'required',
-            'observaciones'         => 'required',
+            'observaciones'         => 'required'
         ]);
 
         Status::create([
-            'registrarstatus'   => $request->registrastatus,
-            'veterinaria'       => $request->veterinaria,
-            'cita'              => $request->cita,
             'hora'              => $request->hora,
             'dia'               => $request->dia,
-            'descripcion'       => $request->descripcion,
             'tratamiento'       => $request->tratamiento,
             'observaciones'     => $request->obervaciones
         ]);
@@ -61,15 +53,11 @@ class StatusController extends Controller
     }
 
 
-    public function update(UpdateStatusRequest $request, Status $status)
+    public function update(UpdatestatusRequest $request, Status $status)
     {
         $request->validate([
-            'registrarstatus'       => 'required',
-            'veterinaria'           => 'required',
-            'cita'                  => 'required',
             'hora'                  => 'required',
             'dia'                   => 'required',
-            'descripcion'           => 'required',
             'tratamiento'           => 'required',
             'observaciones'         => 'required'
         ]);

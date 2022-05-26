@@ -9,6 +9,7 @@
             <a class="button is-info" href="/status/create">Agregar</a>
         </div>
     </section>
+    
 
     <section class="section">
 
@@ -17,53 +18,36 @@
             <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
                 <thead>
                 <tr>
-                    <th>Registrar status</th>
-                    <th>Veterinaria</th>
-                    <th>Cita</th>
-                    <th>Usuario</th>
                     <th>Hora</th>
                     <th>Dia</th>
-                    <th>Descripcion</th>
                     <th>Tratamiento</th>
-                    <th>observaciones</th>
-                    <th>Acciones</th>
+                    <th>Observaciones</th>
                 </tr>
                 </thead>
                 <tfoot>
                 <tr>
-                    <th>Registrar Status</th>
-                    <th>Veterinaria</th>
-                    <th>Cita</th>
-                    <th>Usuario</th>
                     <th>Hora</th>
                     <th>Dia</th>
-                    <th>Descripcion</th>
                     <th>Tratamiento</th>
                     <th>Observaciones</th>
-                    <th>Acciones</th>
                 </tr>
                 </tfoot>
                 <tbody>
 
-                @forelse($status as $statu)
+                @forelse($status as $status)
                     <tr>
-                        <th>{{ $statu->registrarstatusr }}</th>
-                        <td>{{ $statu->veterinaria }}</td>
-                        <td>{{ $statu->cita }}</td>
-                        <td>{{ $statu->usuario }}</td>
-                        <td>$ {{ $statu->hora }} </td>
-                        <td>$ {{ $statu->dia }} </td>
-                        <td>$ {{ $statu->descripcion }} </td>
-                        <td>{{ $statu->tratamiento }} </td>
-                        <td>{{ $statu->observaciones }} </td>
+                        <td>$ {{ $status->hora }} </td>
+                        <td>$ {{ $status->dia }} </td>
+                        <td>{{ $status->tratamiento }} </td>
+                        <td>{{ $status->observaciones }} </td>
                         <td>
-                            <form action="{{ route('status.destroy', $statu->id) }}" 
+                            <form action="{{ route('status.destroy', $status->id) }}" 
                             method="POST">
                                 <a class="button is-info is-small" 
-                                href="{{ route('status.show', $statu->id) }}">
+                                href="{{ route('status.show', $status->id) }}">
                                 Ver</a>
                                 <a class="button is-info is-small" 
-                                href="{{ route('status.edit', $statu->id) }}">
+                                href="{{ route('status.edit', $status->id) }}">
                                 Editar</a>
                                 @csrf
                                 @method('DELETE')
@@ -82,4 +66,6 @@
         </div>
     </section>
 
-@endsection
+    <body bgcolor="paleturquoise">
+    @endsection
+    </body>
