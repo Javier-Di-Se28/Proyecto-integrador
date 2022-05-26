@@ -2,22 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Mascota;
+use App\Models\Mascotita;
 use Illuminate\Http\Request;
 
-class MascotaController extends Controller
+class MascotitaController extends Controller
 {
     
     public function index()
     {
-        $datos ['mascotas']=Mascota::paginate(9);
-        return view('mascota.index',$datos);
+        $datos ['mascotitas']=Mascotita::paginate(9);
+        return view('mascotita.index',$datos);
     }
 
     
     public function create()
     {
-        return view('mascota.create');
+        return view('mascotita.create');
        
     }
 
@@ -34,7 +34,6 @@ class MascotaController extends Controller
             'animal'      => 'required',
             'tipoAnimal'  => 'required',
             'nombre'      => 'required',
-            'peso'        => 'required',
             'raza'        => 'required',
             'tamaño'      => 'required',
             'tipoPelo'    => 'required',
@@ -46,10 +45,10 @@ $mensaje=[
 
 ];
 $this->validate($request, $campos,$mensaje);
-    $datosMascota = request()->except('_token');
-    Mascota::insert($datosMascota);
+    $datosMascotita = request()->except('_token');
+    Mascotita::insert($datosMascotita);
     //return response()->json($datosAnimale);
-    return redirect('mascota')->with('mensaje','Mascota agregado con exito');
+    return redirect('mascotita')->with('mensaje','Mascota agregado con exito');
     }
 
     /**
@@ -58,7 +57,7 @@ $this->validate($request, $campos,$mensaje);
      * @param  \App\Models\Animale  $animale
      * @return \Illuminate\Http\Response
      */
-    public function show(Mascota $mascota)
+    public function show(Mascotita $mascotita)
     {
         //
     }
@@ -71,9 +70,9 @@ $this->validate($request, $campos,$mensaje);
      */
     public function edit($id)
     {
-        $mascota=Mascota::findOrFail($id);
+        $mascota=Mascotita::findOrFail($id);
 
-        return view('mascota.edit', compact('mascota'));
+        return view('mascotita.edit', compact('mascotita'));
     }
 
     /**
@@ -85,11 +84,11 @@ $this->validate($request, $campos,$mensaje);
      */
     public function update(Request $request,$id)
     {
-        $datosMascota = request()->except(['_token','_method']);
-        mascota::where('id',"=" , $id)->update($datosMascota);
+        $datosMascotita= request()->except(['_token','_method']);
+        mascotita::where('id',"=" , $id)->update($datosMascotita);
 
-        $mascota=Mascota::findOrFail($id);
-           return view('mascota.edit', compact('mascota'));
+        $mascota=Mascotita::findOrFail($id);
+           return view('mascotita.edit', compact('mascotita'));
     }
 
     /**
@@ -100,8 +99,8 @@ $this->validate($request, $campos,$mensaje);
      */
     public function destroy($id)
     {
-      Mascota::destroy($id);
-      return redirect('mascota')->with('mensaje','Mascota borrada con exito');
+      Mascotita::destroy($id);
+      return redirect('mascotita')->with('mensaje','Mascota borrada con exito');
     }
     
 }
