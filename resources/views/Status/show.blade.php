@@ -10,18 +10,20 @@
             </div>
             <div class="column">
                 <p class="title">
-                    Detalles de {{ $statu->marca }} 
-                    {{ $statu->modelo }}
+                    Detalles de {{ $status->marca }} 
+                    {{ $status->modelo }}
                 </p>
             </div>
         </div>
     </section>
 
     <section class="section">
-        <p class="title">{{ $statu->modelo }}</p>
-        <p class="subtitle">{{ $statu->marca }}</p>
+        <p class="title">{{ $status->modelo }}</p>
+        <p class="subtitle">{{ $status->marca }}</p>
         <p class="has-text-justify">
-            {{ $statu->descripcion }}
+            {{ $status>descripcion }}
         </p>
     </section>
-@endsection
+    <body bgcolor="paleturquoise">
+    @endsection
+    </body>
