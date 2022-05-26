@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Duenio;
-use App\Http\Requests\StoreDuenioRequest;
-use App\Http\Requests\UpdateDuenioRequest;
+use Illuminate\Http\Requests;
+
 
 class DuenioController extends Controller
 {
@@ -15,7 +15,7 @@ class DuenioController extends Controller
      */
     public function index()
     {
-       $datos ['duenio']=Duenio::paginate(9);
+       $datos ['duenios']=Duenio::paginate(9);
        return view('duenio.index' ,$datos);
     }
 
@@ -35,9 +35,29 @@ class DuenioController extends Controller
      * @param  \App\Http\Requests\StoreDuenioRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreDuenioRequest $request)
+    public function store(Request $request)
     {
-        //
+        {
+
+            $campos=[
+                'nombre'      => 'required',
+                'numTelefono'  => 'required',
+                'colonia'      => 'required',
+                'calle'        => 'required',
+                'numExterior'      => 'required',
+                'numInterior'    => 'required',
+
+            ];
+    $mensaje=[
+    'required'=> 'El :atributo es requerido'
+    
+    ];
+    $this->validate($request, $campos,$mensaje);
+        $datosDuenio = request()->except('_token');
+        Mascotita::insert($datosDuenio);
+        //return response()->json($datosAnimale);
+        return redirect('duenio')->with('mensaje','Mascota agregado con exito');
+        }
     }
 
     /**
@@ -69,9 +89,13 @@ class DuenioController extends Controller
      * @param  \App\Models\Duenio  $duenio
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateDuenioRequest $request, Duenio $duenio)
+    public function update(Request $request, $id)
     {
-        //
+        $datosDuenio= request()->except(['_token','_method']);
+        duenio::where('id',"=" , $id)->update($datosDuenio);
+
+        $mascota=Duenio::findOrFail($id);
+           return view('duenio.edit', compact('duenio'));
     }
 
     /**
