@@ -23,11 +23,7 @@
                 </tr>
                 </thead>
                 <tfoot>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Descripcion</th>
-                    <th>Fecha de publicacion</th>
-                </tr>
+               
                 </tfoot>
                 <tbody>
 
