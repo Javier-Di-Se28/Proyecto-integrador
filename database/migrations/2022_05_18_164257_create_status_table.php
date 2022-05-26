@@ -16,8 +16,9 @@ return new class extends Migration
         Schema::create('status', function (Blueprint $table) {
             $table->id();
             $table->time('hora', $precision = 0);
-            $table->varchar('tratamiento', 150);
-            $table->varchar('observaciones', 150);
+            $table->date('dia');
+            $table->string('tratamiento', 150);
+            $table->string('observaciones', 150);
             $table->timestamps();
         });
     }
