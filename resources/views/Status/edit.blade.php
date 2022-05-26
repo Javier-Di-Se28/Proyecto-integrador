@@ -10,7 +10,7 @@
     </section>
 
     <section class="section">
-        <form action="{{ route('status.update', $statu->id) }}" method="post">
+        <form action="{{ route('status.update', $status->id) }}" method="post">
             @csrf
             @method('PUT')
 
@@ -20,17 +20,17 @@
 
                     <div>
                         <label for="">Marca: </label>
-                        <input class="input is-large" type="text" value="{{ $computadora->marca }}" name="marca" id="">
+                        <input class="input is-large" type="text" value="{{ $status->marca }}" name="marca" id="">
                     </div>
 
                     <div>
                         <label for="">Modelo: </label>
-                        <input class="input is-large" type="text" value="{{ $computadora->modelo }}" name="modelo" id="">
+                        <input class="input is-large" type="text" value="{{ $status->modelo }}" name="modelo" id="">
                     </div>
 
                     <div>
                         <label for="">Descripción: </label>
-                        <textarea class="input is-large" name="descripcion" id="" cols="30" rows="5"> {{ $computadora->descripcion }}</textarea>
+                        <textarea class="input is-large" name="descripcion" id="" cols="30" rows="5"> {{ $status->descripcion }}</textarea>
                     </div>
 
                     

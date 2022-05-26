@@ -33,7 +33,7 @@
 
                     <div>
                         <label for="">Dia:</label>
-                        <select class="input is-large" " name="registrarstatus" id="">
+                        <select class="input is-large" " name="dia" id="">
                             <option value="Lunes">Lunes</option>
                             <option value="Martes">Martes</option>
                             <option value="Miercoles">Miercoles</option>
