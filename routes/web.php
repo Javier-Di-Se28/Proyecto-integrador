@@ -17,7 +17,7 @@ use App\Http\Controllers\EstadoController;
 use App\Http\Controllers\ForodudasController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\CitaController;
-use Illuminate\Support\Facades\Auth;
+
 
 
 
