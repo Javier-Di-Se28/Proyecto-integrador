@@ -45,13 +45,11 @@
 
                     
 
-                    <div>
-                        <label for="">Tratamiento:</label>
-                        <select class="input is-large" name="tratamiento" id="">
-                            <option value="1">Corte de pelo</option>
-                            <option value="0">Consulta general</option>
-                        </select>
+                            <div>
+                        <label for="">Tramiento:</label>
+                        <textarea class="input is-large" name="tratamiento" id="" cols="30" rows="5"></textarea>
                     </div>
+                </div>
 
                     <div>
                         <label for="">Observaciones:</label>

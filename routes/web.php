@@ -33,7 +33,9 @@ Route::resources([
 Route::resources([
     'cita'   => CitaController::class,
 ]);
-
+Route::resources([
+    'mascota'   => MascotaController::class,
+]);
 
 
 

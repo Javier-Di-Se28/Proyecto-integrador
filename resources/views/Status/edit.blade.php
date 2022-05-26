@@ -19,21 +19,24 @@
                 <div class="column">
 
                     <div>
-                        <label for="">Marca: </label>
-                        <input class="input is-large" type="text" value="{{ $status->marca }}" name="marca" id="">
+                        <label for="">Hora: </label>
+                        <input class="input is-large" type="text" value="{{ $status->hora }}" name="hora" id="">
                     </div>
 
                     <div>
-                        <label for="">Modelo: </label>
-                        <input class="input is-large" type="text" value="{{ $status->modelo }}" name="modelo" id="">
+                        <label for="">Dia: </label>
+                        <input class="input is-large" type="text" value="{{ $status->dia }}" name="dia" id="">
                     </div>
 
                     <div>
-                        <label for="">Descripción: </label>
-                        <textarea class="input is-large" name="descripcion" id="" cols="30" rows="5"> {{ $status->descripcion }}</textarea>
+                        <label for="">Tratamiento: </label>
+                        <textarea class="input is-large" name="tratamiento" id="" cols="30" rows="5"> {{ $status->descripcion }}</textarea>
                     </div>
 
-                    
+                    <div>
+                        <label for="">Observaciones: </label>
+                        <input class="input is-large" type="text" value="{{ $status->observaciones }}" name="observaciones" id="">
+                    </div>
 
                 </div>
 
