@@ -23,7 +23,7 @@ crossorigin="anonymous">
     @if(Session::has('mensaje'))
     {{ Session::get('mensaje')}}
     @endif
-    <a href="{{ url('mascota/create')}}" class="btn btn-success ">Registrar nueva mascota</a> 
+    <a href="{{ url('mascotita/create')}}" class="btn btn-success ">Registrar nueva mascota</a> 
 
     <th> Num Registros: </th>
                 <th>Animal</th>
@@ -38,52 +38,40 @@ crossorigin="anonymous">
                 </tr>   
                 </thead> 
 </tbody>
-@foreach($mascotas as $mascota)
+@foreach($mascotitas as $mascotita)
 <tr>
-                        <th>{{ $mascota->id }}</th>
-                        <th>{{ $mascota->animal }}</th>
-                        <td>{{ $mascota->tipoAnimal }}</td>
-                        <td>{{ $mascota->nombre }}</td>
-                        <td>{{ $mascota->peso }}</td>
-                        <td>{{ $mascota->raza }}</td>
-                        <td>{{ $mascota->tamaño }} </td>
-                        <td>{{ $mascota->tipoPelo}} </td>
-                        <td>{{ $mascota->edad}} </td>
-                        <td>{{ $mascota->sexo}} </td>   
+<th>{{ $mascotita->id }}</th>
+                        <th>{{ $mascotita->animal }}</th>
+                        <td>{{ $mascotita->tipoAnimal }}</td>
+                        <td>{{ $mascotita->nombre }}</td>
+                        <td>{{ $mascotita->peso }}</td>
+                        <td>{{ $mascotita->raza }}</td>
+                        <td>{{ $mascotita->tamaño }} </td>
+                        <td>{{ $mascotita->tipoPelo}} </td>
+                        <td>{{ $mascotita->edad}} </td>
+                        <td>{{ $mascotita->sexo}} </td>   
                         <td>    
 
-                        <form action="{route('mascota.destroy' , $mascota->id) }}"
+                        <form action="{route('mascotita.destroy' , $mascotita->id) }}"
                             method="POST">
-                                <a class="button is-info is-small" 
-                                href="{{route('mascota.show' , $mascota->id)}}">
-                               Ver</a>
+                                <a    
+                                href="{{route('mascotita.show' , $mascotita->id)}}" class="btn btn-info">
+                               Ver </a>
                                
                                
-                       <a href="{{ url ('/mascota/'.$mascota->id.'/edit')}}" class="btn btn-warning" >
+                       <a href="{{ url ('/mascotita/'.$mascotita->id.'/edit')}}" class="btn btn-warning" >
                        Editar
                      </a>
     
                      
-                        <form action="{{ url ('/mascota/'.$mascota->id)}}" class="d-inline" method="POST">
+                        <form action="{{ url ('/mascotita/'.$mascotita->id)}}" class="d-inline" method="POST">
                             @csrf
                             {{ method_field('DELETE') }}
                     <input class="btn btn-danger" type="submit" onclick="return confirm('borrar')"
                      value="Borrar">
                         </form>
               </td> 
-              <nav class="navbar navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="<nav class="navbar navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="https://images.app.goo.gl/6yXo1JyqbvT8LFuD6" " alt="" width="30" height="24"    width="30" height="24" class="d-inline-block align-text-top">
-    </a>
-  </div>
-</nav>
-    </a>
-  </div>
-</nav>      
+     
  </tr>
  @endforeach
 </body>

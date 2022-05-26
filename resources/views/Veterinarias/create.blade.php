@@ -52,7 +52,7 @@
                     </div>
                     
                         <label for="">redesSociales: </label>
-                        <textarea class="input is-large" name="redesSociales" id="" cols="20" rows="5"></textarea>
+                        <textarea class="input is-large" name="redesSociales" id="" cols="10" rows="5"></textarea>
                     </div>
                    
                 </div>
