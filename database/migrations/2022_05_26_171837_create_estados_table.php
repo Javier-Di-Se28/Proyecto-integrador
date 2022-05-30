@@ -13,15 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-
-        Schema::disableForeignKeyConstraints();
-
-        Schema::create('estados', function (Blueprint $table) {
+        Schema::create('status', function (Blueprint $table) {
             $table->id();
-            $table->string ('hora' , 150 );
-            $table->string('dia', 150);
-            $table->string('tratamiento' , 150);
-            $table->string('observaciones' , 129);
+            $table->time('hora', $precision = 0);
+            $table->string('tratamiento', 150);
+            $table->string('observaciones', 150);
             $table->timestamps();
         });
         Schema::enableForeignKeyConstraints();
@@ -34,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('estados');
+        Schema::dropIfExists('status');
     }
 };

@@ -5,10 +5,15 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\DuenioController;
-use App\Http\Controllers\MascotitaController;
+use App\Http\Controllers\MascotaController;
 use App\Http\Controllers\VeterinariaController;
-
 use App\Http\Controllers\MotivoController;
+use App\Http\Controllers\UsuaritoController;
+use App\Http\Controllers\CitatirController;
+
+
+
+
 
 Route::resources([
     'duenio'   => DuenioController::class,
@@ -16,12 +21,11 @@ Route::resources([
 
 ]);
 
-use App\Http\Controllers\EstadoController;
+use App\Http\Controllers\StatusController;
 use App\Http\Controllers\ForodudasController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\CitaController;
-
-
+use Illuminate\Support\Facades\Auth;
 
 
 Route::resources([
@@ -38,20 +42,12 @@ Route::resources([
 Route::resources([
     'forodudas'   => ForodudasController::class,
 ]);
-
-
     Route::resource(
-        'mascotita', MascotitaController::class);
+        'mascota', MascotaController::class);
         
     Route::resource(
             'motivo', MotivoController::class);
 
-
-        
-Route::get('/',function() {
-return view('welcome');
-   
-});
 
 Route::resources([
     'usuario'   => UsuarioController::class,
@@ -65,17 +61,7 @@ Route::resources([
 ]);
 
 
+Route::get('/', function () {
 
-
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    return view('welcome');
+});
