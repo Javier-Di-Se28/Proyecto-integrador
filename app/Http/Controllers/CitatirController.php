@@ -31,11 +31,6 @@ class CitatirController extends Controller
     {
 
         $campos=[
-            'idCita'         => 'required',
-            'idVeterinaria'  => 'required',
-            'idDuenio'       => 'required',
-            'idMascota'      => 'required',
-            'idMotivo'       => 'required',
             'dia'            => 'required',
             'hora'           => 'required',
         ];

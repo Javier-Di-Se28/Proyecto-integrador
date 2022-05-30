@@ -10,11 +10,6 @@ class Citatir extends Model
     use HasFactory;
 
     protected $fillable = [
-        'idCita',
-        'idVeterinaria',
-        'idDuenio',
-        'idMascota',
-        'idMotivo',
         'dia',
         'hora',
     ];

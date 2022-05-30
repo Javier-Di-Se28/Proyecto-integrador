@@ -29,41 +29,9 @@ crossorigin="anonymous">
           <hr color="red"/> <!-- Linea recta-->
           <P style="float: center;"> <!-- Texto centro-->
         </div>
-          <div class="form-group">
-          <div>
-           <label for="idCita">Cita: </label>   
-            <input type="text" width="500px" height="200px" style="background-color:white" class="form-control" name="idCita" value="{{ isset($citatir->idCita)?$citatir->idCita:''}}" id="idCita">
-            </div>
-            </div>
+          
 
-            <div class="form-group">
-            <div>
-            <label for="idVeterinaria">Veterinaria: </label> 
-            <input type="text"  class="form-control" name="idVeterinaria" value="{{ isset($citatir->idVeterinaria)?$citatir->idVeterinaria:''  }}" id="idVeterinaria">
-           
-          </div>
-            </div>
-            <div class="column">
-            <div class="form-group">
-            <div>
-            <label for="idDuenio">Dueño: </label> 
-            <input type="text"  class="form-control" name="idDuenio" value="{{ isset($citatir->idDuenio)?$citatir->idDuenio:''}}" id="idDuenio">
-            </div>
-            </div>
-
-            <div class="form-group">
-            <div>
-            <label for="idMascota">Mascota: </label> 
-            <input type="text"  class="form-control" name="idMascota" value="{{ isset($citatir->idMascota)?$citatir->idMascota:''}}" id="idMascota">
-            </div>
-            </div>
-
-            <div class="form-group">
-            <div>
-            <label for="idMotivo">Motivo: </label> 
-            <input type="text"  class="form-control" name="idMotivo" value="{{ isset($citatir->idMotivo)?$citatir->idMotivo:''}}" id="idMotivo">
-            </div>
-            </div>
+      
 
             <div class="form-group">
             <div>
