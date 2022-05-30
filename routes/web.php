@@ -32,9 +32,11 @@ Route::resources([
     'veterinaria'   => VeterinariaController::class,
 ]);
 
+
 Route::resources([
-    'status'   => StatusController::class,
+    'estado'   => EstadoController::class,
     
+
 ]);
 
 Route::resources([
@@ -48,20 +50,16 @@ Route::resources([
 
 
 Route::resources([
-    'mascota' => MascotaController::class,
+    'usuario'   => UsuarioController::class,
 ]);
 
 Route::resources([
-    'duenio'   => DuenioController::class,
+    'cita'   => CitaController::class,
+]);
+Route::resources([
+    'mascota'   => MascotaController::class,
 ]);
 
-Route::resources([
-    'usuarito' => UsuaritoController::class,
-]);
-
-Route::resources([
-    'citatir'   => CitatirController::class,
-]);
 
 Route::get('/', function () {
 

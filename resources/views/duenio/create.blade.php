@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layout.layout')
 @section('content')
 
@@ -72,3 +73,9 @@
     </section>
 
 @endsection
+=======
+<form action="{{ url('/duenio') }}" method="POST" enctype="multipart/form-data">
+@csrf
+@include('duenio.form',['modo'=>'Registrar'])
+</form>                               
+>>>>>>> cf2f72ab196f2379b27077c59cd0e54079af4a21
