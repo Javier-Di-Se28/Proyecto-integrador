@@ -3,7 +3,8 @@
 integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
 crossorigin="anonymous">
 
-
+<div class="table-responsive">
+<table class="table">
         <div class="container" style="background-color: rgb(175, 238, 238);" >
         <h1 style="font-size:30px; font-family:cursive;"> Casita 
         </h1>

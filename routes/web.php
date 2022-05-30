@@ -46,9 +46,10 @@ Route::resources([
             'motivo', MotivoController::class);
 
 
+        
 Route::get('/',function() {
-/*return view('welcome');*/
-    return "Bienvenido a la pagina principal";
+return view('welcome');
+   
 });
 
 Route::resources([
@@ -65,3 +66,15 @@ Route::resources([
 
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
