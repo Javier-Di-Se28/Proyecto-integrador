@@ -67,7 +67,7 @@ $this->validate($request, $campos,$mensaje);
      */
     public function edit($id)
     {
-        $status=Estado::findOrFail($id);
+        $estado=Estado::findOrFail($id);
 
         return view('estado.edit', compact('estado'));
     }
