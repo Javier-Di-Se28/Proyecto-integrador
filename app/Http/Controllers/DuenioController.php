@@ -15,7 +15,8 @@ class DuenioController extends Controller
      */
     public function index()
     {
-        //
+       $datos ['duenio']=Duenio::paginate(9);
+       return view('duenio.index' ,$datos);
     }
 
     /**
@@ -25,7 +26,7 @@ class DuenioController extends Controller
      */
     public function create()
     {
-        //
+        return view ('duenio.create');
     }
 
     /**
