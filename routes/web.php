@@ -1,10 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+
+
 use App\Http\Controllers\DuenioController;
 use App\Http\Controllers\MascotaController;
 use App\Http\Controllers\VeterinariaController;
 use App\Http\Controllers\MotivoController;
+use App\Http\Controllers\UsuaritoController;
+use App\Http\Controllers\CitatirController;
+
+
+
+
 
 Route::resources([
     'duenio'   => DuenioController::class,
@@ -21,8 +30,6 @@ use Illuminate\Support\Facades\Auth;
 
 Route::resources([
     'veterinaria'   => VeterinariaController::class,
-    
-
 ]);
 
 Route::resources([
@@ -33,7 +40,6 @@ Route::resources([
 Route::resources([
     'forodudas'   => ForodudasController::class,
 ]);
-
     Route::resource(
         'mascota', MascotaController::class);
         
@@ -41,8 +47,23 @@ Route::resources([
             'motivo', MotivoController::class);
 
 
-Route::get('/',function() {
+Route::resources([
+    'mascota' => MascotaController::class,
+]);
+
+Route::resources([
+    'duenio'   => DuenioController::class,
+]);
+
+Route::resources([
+    'usuarito' => UsuaritoController::class,
+]);
+
+Route::resources([
+    'citatir'   => CitatirController::class,
+]);
+
+Route::get('/', function () {
+
     return view('welcome');
 });
-
-
