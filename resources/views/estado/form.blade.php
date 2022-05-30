@@ -10,7 +10,7 @@ crossorigin="anonymous">
         <h1 style="font-size:30px; font-family:cursive;">
         de Goofy</h1>
        
-
+        <img src="https://cdn-icons-png.flaticon.com/512/35/35145.png" width="150px" height="80px"/>
         @if(count($errors)>0)
         <div class="alert alert-danger rol e="alert">
     <ul>
@@ -30,9 +30,9 @@ crossorigin="anonymous">
         </div>
           <div class="form-group">
           <div class="column">
-
+          
           <div>
-           <label for="hora">Hora: </label>   
+           <label for="hora">Ingrese la hora en formato 00:00: </label>   
             <input type="text"  style="background-color:white" class="form-control" name="hora" value="{{ isset($mascota->animal)?$mascota->animal:''}}"
              id="hora"></div>
            </div>
@@ -52,7 +52,7 @@ crossorigin="anonymous">
             <div class="column">
             <div class="form-group">
             <div>
-            <label for="observaciones">Observaciones: </label> 
+            <label for="observaciones">Observaciones sobre la mascota: </label> 
             <input type="text" type="radio" class="form-control" name="observaciones" value="{{ isset($mascota->observaciones)?$mascota->raza:''}}" 
             id="observaciones"> </div>
 
@@ -60,7 +60,7 @@ crossorigin="anonymous">
             <div class="column">
             <div class="form-group">
             <div>
-            <label for="tratamiento">Tratamiento: </label> 
+            <label for="tratamiento">Tratamiento aplicado: </label> 
             <input type="text" type="radio" class="form-control" name="tratamiento" value="{{ isset($mascota->tratamiento)?$mascota->tamaño:''}}" 
             id="tratamiento"> </div>
     

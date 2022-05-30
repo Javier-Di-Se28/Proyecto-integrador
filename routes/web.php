@@ -47,7 +47,8 @@ Route::resources([
 
 
 Route::get('/',function() {
-    return view('welcome');
+/*return view('welcome');*/
+    return "Bienvenido a la pagina principal";
 });
 
 Route::resources([

@@ -13,6 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
+
+        Schema::disableForeignKeyConstraints();
+
         Schema::create('estados', function (Blueprint $table) {
             $table->id();
             $table->string ('hora' , 150 );
@@ -21,6 +24,7 @@ return new class extends Migration
             $table->string('observaciones' , 129);
             $table->timestamps();
         });
+        Schema::enableForeignKeyConstraints();
     }
 
     /**

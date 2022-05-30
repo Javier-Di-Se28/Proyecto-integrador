@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre', 30);
             $table->string('descripcion', 150);
-            $table->time('fechaPublicacion');
+            $table->string('fechaPublicacion', 129);
             $table->timestamps();
         });
     }

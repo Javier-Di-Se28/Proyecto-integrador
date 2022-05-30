@@ -12,6 +12,7 @@ class CreateVeterinariasTable  extends Migration
      * @return void
      */
     public function up()
+    
     {
         Schema::create('veterinarias', function (Blueprint $table) {
             $table->id();
@@ -24,6 +25,7 @@ class CreateVeterinariasTable  extends Migration
             $table->string('redesSociales' , 123);
             $table->timestamps();
         });
+ 
     }
 
     /**
