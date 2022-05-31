@@ -26,7 +26,14 @@
     @if(Session::has('mensaje'))
     {{ Session::get('mensaje')}}
     @endif
-
+    </div>
+    <center>
+        </div>
+        <div class="d-grid gap-2 col-5 mx-3">
+            <a href="{{ url('mascota/create')}}" type="submit" class="btn  btn btn-primary mt-3 mb-2">Registrar nueva mascota</a>
+            <a class="btn btn-warning" href="{{ url('veterinaria/')}}">Inicio</a>
+            
+    </div>
     <div class="table-responsive">
         <table class="table table-bordered table-succes table-hover">
             <th> Mascotas: </th>
@@ -43,7 +50,7 @@
             </thead>
             </tbody>
     </div>
-    </div>
+
     @foreach($mascotas as $mascota)
     <tr>
         <th>{{ $mascota->id }}</th>
@@ -68,21 +75,16 @@
                 {{ method_field('DELETE') }}
                 <input class="btn btn-danger" type="submit" onclick="return confirm('borrar')" value="Borrar">
             </form>
+            
     </tr>
 
 
     </table>
+   
     </table>
+    
     </div>
-    <center>
-        </div>
-        <div class="d-grid gap-2 col-5 mx-3">
-            <a href="{{ url('mascota/create')}}" type="submit" class="btn  btn btn-primary mt-3 mb-2" ">Registrar nueva mascota</a>
-      
-    </div>
-    </div>
-        </div>
-    </center>
+    
     
   @endforeach
 </body>
