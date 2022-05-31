@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Estado;
 use Illuminate\Http\Request;
-use Image;
 
 class EstadoController extends Controller
 {
@@ -67,7 +66,7 @@ $this->validate($request, $campos,$mensaje);
      */
     public function edit($id)
     {
-        $status=Estado::findOrFail($id);
+        $estado=Estado::findOrFail($id);
 
         return view('estado.edit', compact('estado'));
     }

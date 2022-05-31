@@ -19,7 +19,7 @@ crossorigin="anonymous">
         <div class="container" style="background-color: paleturquoise;" >
         <h1> VETERINARIA GOOFY</h1>
 
-        <img src="https://cdn-icons-png.flaticon.com/512/35/35145.png" width="150px" height="80px"/>
+        <img src="https://cdn-icons-png.flaticon.com/512/35/35145.png" width="150px" height="100px"/>
         
     <br>
     @if(Session::has('mensaje'))
@@ -44,12 +44,7 @@ crossorigin="anonymous">
                         <td>{{ $estado->observaciones }}</td>
                         <td>    
 
-                        <form action="{route('estado.destroy' , $estado->id) }}"
-                            method="POST">
-                                <a    
-                                href="{{route('estado.show' , $estado->id)}}" class="btn btn-info">
-                               Ver </a>
-                               
+                            
                                
                        <a href="{{ url ('/estado/'.$estado->id.'/edit')}}" class="btn btn-warning" >
                        Editar
@@ -68,4 +63,5 @@ crossorigin="anonymous">
  @endforeach
 </body>
 </table>
+<a class="btn btn-warning" href="{{ url('veterinaria/')}}">Inicio</a>
 </html>

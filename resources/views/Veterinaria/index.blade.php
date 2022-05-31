@@ -35,14 +35,13 @@
         <h1 style="font-size:30px; font-family:cursive;">
             de Goofy</h1>
             <div class="mx-auto"  style="width: 200px" height="59px">
-    <span class="btn btn-info" href="{{ url('mascota/')}}">Foro De dudas</a>
-    </button>
+    <a class="btn btn-info" href="{{ url('forodudas/')}}">Foro De dudas</a>
     </div>
         <div class="columns">
           <div class="column">
-          <a class="btn btn-info" href="{{ url('motivo/')}}">Consultar citas</a>
+          <a class="btn btn-info" href="{{ url('usuarito/')}}">Consultar citas</a>
           <img src="https://cdn-icons-png.flaticon.com/512/35/35145.png" width="250px" height="200px" />        
-          <a class="btn btn-info" href="{{ url('mascota/')}}">Registrar status</a>
+          <a class="btn btn-info" href="{{ url('estado/')}}">Registrar status</a>
 </center>
           <hr color="red"/> <!-- Linea recta-->
           <P style="float: center;"> <!-- Texto centro-->
@@ -60,7 +59,7 @@
         
         <td>
 
-            <form action="{{ url ('/veterinaria/'.$mascota->id)}}" class="d-inline" method="POST">
+            <form action="{{ url ('/veterinaria/'.$veterinaria->id)}}" class="d-inline" method="POST">
                 @csrf
                 {{ method_field('DELETE') }}
                 <input class="btn btn-danger" type="submit" onclick="return confirm('borrar')" value="Borrar">
@@ -74,7 +73,7 @@
     <center>
         </div>
         <div class="d-grid gap-2 col-5 mx-3">
-            <a href="{{ url('veterinaria/create')}}" type="submit" class="btn  btn btn-primary mt-3 mb-2" ">Registrar nueva mascota</a>
+            <a href="{{ url('veterinaria/create')}}" type="submit" class="btn  btn btn-primary mt-3 mb-2" >Registrar nueva mascota</a>
       
     </div>
     </div>

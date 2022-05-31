@@ -23,7 +23,6 @@ Route::resources([
 
 use App\Http\Controllers\EstadoController;
 use App\Http\Controllers\ForodudasController;
-use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\CitaController;
 use Illuminate\Support\Facades\Auth;
 
@@ -50,7 +49,7 @@ Route::resources([
 
 
 Route::resources([
-    'usuario'   => UsuarioController::class,
+    'usuarito'   => UsuaritoController::class,
 ]);
 
 Route::resources([
