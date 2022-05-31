@@ -10,7 +10,7 @@ class MascotaController extends Controller
     
     public function index()
     {
-        $datos ['mascotas']=Mascota::paginate(9);
+        $datos ['mascotas']=Mascota::paginate(7);
         return view('mascota.index',$datos);
     }
 
@@ -31,10 +31,8 @@ class MascotaController extends Controller
     {
 
         $campos=[
-            'animal'      => 'required',
             'tipoAnimal'  => 'required',
             'nombre'      => 'required',
-            'peso'        => 'required',
             'raza'        => 'required',
             'tamaño'      => 'required',
             'tipoPelo'    => 'required',
@@ -58,9 +56,11 @@ $this->validate($request, $campos,$mensaje);
      * @param  \App\Models\Animale  $animale
      * @return \Illuminate\Http\Response
      */
-    public function show(Mascota $mascota)
+    public function show($id)
     {
-        //
+    
+      
+
     }
 
     /**
@@ -85,7 +85,7 @@ $this->validate($request, $campos,$mensaje);
      */
     public function update(Request $request,$id)
     {
-        $datosMascota = request()->except(['_token','_method']);
+        $datosMascota= request()->except(['_token','_method']);
         mascota::where('id',"=" , $id)->update($datosMascota);
 
         $mascota=Mascota::findOrFail($id);
@@ -101,7 +101,8 @@ $this->validate($request, $campos,$mensaje);
     public function destroy($id)
     {
       Mascota::destroy($id);
-      return redirect('mascota')->with('mensaje','Mascota borrada con exito');
+      return redirect('mascota')->with ( 'mensaje','Mascota borrada con exito');
+     
     }
     
 }

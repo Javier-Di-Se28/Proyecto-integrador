@@ -10,10 +10,6 @@ class Status extends Model
     use HasFactory;
 
     protected $fillable = [
-        'registrarstatus',
-        'veterinaria',
-        'cita',
-        'usuario',
         'hora',
         'dia',
         'descripcion',

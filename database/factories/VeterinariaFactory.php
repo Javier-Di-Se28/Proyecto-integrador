@@ -17,7 +17,7 @@ class VeterinariaFactory extends Factory
     public function definition()
     {
         return [
-          
+            //
         ];
     }
 }

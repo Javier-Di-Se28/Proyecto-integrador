@@ -1,12 +1,13 @@
 @extends('layout.layout')
 @section('content')
 
-    <section class="hero is-link">
-        <div class="hero-body">
-            <p class="title">
-                Formulario para registrar tu duda
-            </p>
-        </div>
+<div class="container" style="background-color: rgb(175, 238, 238);" >
+        <h1 style="font-size:30px; font-family:cursive;"> Formulario para 
+        </h1>
+        <h1 style="font-size:30px; font-family:cursive;">
+        registrar tu duda</h1>
+       
+        <img src="https://cdn-icons-png.flaticon.com/512/35/35145.png" width="150px" height="80px"/>
     </section>
 
     <section class="section">
@@ -28,8 +29,8 @@
                     </div>
 
                     <div>
-                        <label for="">Fecha de publicacion: </label>
-                        <textarea class="input is-large" name="fechaPublicacion" id="" cols="30" rows="5"></textarea>
+                        <label for="">Ingrese la fecha actual: </label>
+                        <input class="input is-large" type="text" name="fechaPublicacion" id="">
                     </div>
 
                     

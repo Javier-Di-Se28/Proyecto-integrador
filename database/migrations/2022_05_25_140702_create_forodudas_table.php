@@ -13,11 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
+
+        Schema::disableForeignKeyConstraints();
         Schema::create('forodudas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre', 30);
             $table->string('descripcion', 150);
-            $table->time('fechaPublicacion');
+            $table->string('fechaPublicacion', 129);
             $table->timestamps();
         });
     }

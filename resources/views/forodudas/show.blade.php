@@ -18,10 +18,11 @@
     </section>
 
     <section class="section">
-        <p class="title">{{ $forodudas->modelo }}</p>
-        <p class="subtitle">{{ $forodudas->marca }}</p>
+        <p class="subtitle">{{ $forodudas->descripcion }}</p>
         <p class="has-text-justify">
-            {{ $forodudas->descripcion }}
+            {{ $forodudas->fechaPublicacion }}
         </p>
     </section>
-@endsection
+    <body bgcolor="paleturquoise">
+    @endsection
+    </body>

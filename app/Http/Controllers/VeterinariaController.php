@@ -3,80 +3,82 @@
 namespace App\Http\Controllers;
 
 use App\Models\Veterinaria;
-use App\Http\Requests\StoreVeterinariaRequest;
-use App\Http\Requests\UpdateVeterinariaRequest;
-use League\CommonMark\Delimiter\Delimiter;
+use Illuminate\Http\Request;
 
 class VeterinariaController extends Controller
 {
-
+    
     public function index()
     {
-        return view('veterinarias.index')->with('veterinarias', Veterinaria::all());
+        $datos ['veterinarias']=Veterinaria::paginate(7);
+        return view('veterinaria.index',$datos);
     }
 
+    
     public function create()
     {
-        return view('veterinarias.create');
+        return view('veterinaria.create');
+       
     }
 
-
-    public function store(StoreVeterinariaRequest $request)
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
     {
-        $request->validate([
-            'nombre'           => 'required',
-            'sucursal'         => 'required',
-            'direccion'        => 'required',
-            'servicios'        => 'required',
-            'numTelefonico'    => 'required',
-            'correo'           => 'required',
-            'redesSociales'    => 'required'
 
-        ]);
 
-        Veterinaria::create([
-            'nombre'             => $request->nombre,
-            'sucursal'           => $request->sucursal,
-            'direccion'          => $request->direccion,
-            'servicios'          => $request->servicios,
-            'numTelefonico'      => $request->numTelefonico,
-            'correo'             => $request->correo,
-            'redesSociales'      => $request->redesSociales
-        ]);
-
-        return redirect()->route('veterinaria.index');
     }
 
-
-    public function show(Veterinaria $veterinaria)
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Animale  $animale
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
     {
-    return view ('veterinarias.show' , compact('veterinaria'));
-
+    
+      
 
     }
 
-
-    public function edit(Veterinaria $veterinaria)
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\Animale  $animale
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
     {
-        //
+    
     }
 
-
-    public function update(UpdateVeterinariaRequest $request, Veterinaria $veterinaria)
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\Animale  $animale
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request,$id)
     {
-        //
+    
     }
 
-
-    public function destroy(Veterinaria $veterinaria)
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Animale  $animale
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
     {
-        $veterinaria->delete();
-        return redirect()->route('veterinaria.index');
+   
+     
     }
-    public function datatable()
-{
-    $Veterinarias = Veterinaria::all();
-    return view('veterinarias.datatable', compact('veterinarias'));
-}
-
+    
 }

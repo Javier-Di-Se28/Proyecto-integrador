@@ -2,74 +2,101 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreMotivoRequest;
-use App\Http\Requests\UpdateMotivoRequest;
 use App\Models\Motivo;
-use League\CommonMark\Delimiter\Delimiter;
+use Illuminate\Http\Request;
 
 class MotivoController extends Controller
 {
-
+    
     public function index()
     {
-        return view('veterinaria.index')->with('veterinaria', Veterinaria::all());
+        $datos ['motivos']=Motivo::paginate(9);
+        return view('motivo.index',$datos);
     }
 
-
+    
     public function create()
     {
-        return view('veterinaria.create');
+        return view('motivo.create');
+       
     }
 
-
-    public function store(StoreMotivoRequest $request)
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
     {
-        $request->validate([
-            'descripcion'       => 'required',
-            'tipo'              => 'required',
-            'urgente'           => 'required'
-        ]);
 
-        Motivo::create([
-            'descripcion'       => $request->descripcion,
-            'tipo'              => $request->tipo,
-            'urgente'           => $request->disponible
-        ]);
+        $campos=[
+            'tipo'      => 'required',
+            'descripcion'  => 'required',
+            'urgencia'      => 'required',
+            
+        ];
+$mensaje=[
+'required'=> 'El :atributo es requerido'
 
-        return redirect()->route('veterinaria.index');
+];
+$this->validate($request, $campos,$mensaje);
+    $datosMotivo = request()->except('_token');
+    Motivo::insert($datosMotivo);
+    //return response()->json($datosAnimale);
+    return redirect('motivo')->with('mensaje','dato agregado con exito');
     }
 
-
-    public function show(Veterinaria $veterinaria)
-    {
-    return view ('veterinaria.show' , compact('veterinaria'));
-
-
-    }
-
-
-    public function edit(Veterinaria $veterinaria)
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Animale  $animale
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Motivo $motivo)
     {
         //
     }
 
-
-    public function update(UpdateVeterinariaRequest $request, Veterinaria $veterinaria)
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\Animale  $animale
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
     {
-        //
+        $motivo=Motivo::findOrFail($id);
+
+        return view('motivo.edit', compact('motivo'));
     }
 
-
-    public function destroy(Veterinaria $veterinaria)
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\Animale  $animale
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request,$id)
     {
-        $veterinaria->delete();
-        return redirect()->route('veterinaria.index');
+        $datosMotivo = request()->except(['_token','_method']);
+        motivo::where('id',"=" , $id)->update($datosMotivo);
+
+        $motivo=Motivo::findOrFail($id);
+           return view('motivo.edit', compact('motivo'));
     }
-    public function datatable()
-{
-    $Veterinaria = Veterinaria::all();
-    return view('veterinaria.datatable', compact('veterinaria'));
-}
 
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Animale  $animale
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+      Motivo::destroy($id);
+      return redirect('motivo')->with('mensaje','dato borrada con exito');
+    }
+    
 }
-
