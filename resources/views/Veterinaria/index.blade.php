@@ -18,10 +18,7 @@
 <div class="table-responsive">
     <!-- Contenedor de colores-->
     <div class="container" style="background-color: rgb(175, 238, 238);">
-    
-    <div class="mx-100px"  style="width: 200px" height="59px">
-    <span class="btn btn-danger" href="{{ url('mascota/')}}">Cerrar sesion</a>
-    </button>
+    <a class="btn btn-warning"  href="{{ url('login')}}">Cerrar sesion</a>
 
     </div>
     @if(Session::has('mensaje'))
@@ -39,7 +36,7 @@
     </div>
         <div class="columns">
           <div class="column">
-          <a class="btn btn-info" href="{{ url('usuarito/')}}">Consultar citas</a>
+          <a class="btn btn-info" href="{{ url('citatir/')}}">Crear cita</a>
           <img src="https://cdn-icons-png.flaticon.com/512/35/35145.png" width="250px" height="200px" />        
           <a class="btn btn-info" href="{{ url('estado/')}}">Registrar status</a>
 </center>
@@ -82,4 +79,5 @@
     
   @endforeach
 </body>
+
 </html>

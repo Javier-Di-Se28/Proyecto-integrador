@@ -29,7 +29,7 @@
                     </div>
 
                     <div>
-                        <label for="">Ingrese la fecha actual: </label>
+                        <label for="">Ingrese la fecha actual en formato DD/MM/AÑO: </label>
                         <input class="input is-large" type="text" name="fechaPublicacion" id="">
                     </div>
 

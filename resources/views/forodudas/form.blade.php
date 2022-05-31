@@ -5,7 +5,7 @@ crossorigin="anonymous">
 
 
         <div class="container" style="background-color: rgb(175, 238, 238);" >
-        <h1 style="font-size:30px; font-family:cursive;"> Casita 
+        <h1 style="font-size:30px; font-family:cursive;"> La casita 
         </h1>
         <h1 style="font-size:30px; font-family:cursive;">
         de Goofy</h1>

@@ -17,7 +17,7 @@ crossorigin="anonymous">
     <thead class="thead-light">
         <!-- Contenedor de colores-->
         <div class="container" style="background-color: paleturquoise;" >
-        <h1> VETERINARIA GOOFY</h1>
+        <h1> La veterinaria de Goofy</h1>
 
         <img src="https://cdn-icons-png.flaticon.com/512/35/35145.png" width="150px" height="100px"/>
         

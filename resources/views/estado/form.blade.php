@@ -33,7 +33,7 @@ crossorigin="anonymous">
           <div class="column">
           
           <div>
-           <label for="hora">Ingrese la hora en formato 00:00: </label>   
+           <label for="hora">Ingrese la hora en formato 24:00 </label>   
             <input type="text"  style="background-color:white" class="form-control" name="hora" value="{{ isset($mascota->animal)?$mascota->animal:''}}"
              id="hora"></div>
            </div>
