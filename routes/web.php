@@ -9,9 +9,9 @@ use App\Http\Controllers\MascotaController;
 use App\Http\Controllers\VeterinariaController;
 use App\Http\Controllers\MotivoController;
 use App\Http\Controllers\UsuaritoController;
-use App\Http\Controllers\CitatirController;
+use App\Http\Controllers\CitaController;
 
-
+use Illuminate\Support\Facades\Auth;
 
 
 
@@ -23,7 +23,7 @@ Route::resources([
 
 use App\Http\Controllers\EstadoController;
 use App\Http\Controllers\ForodudasController;
-use Illuminate\Support\Facades\Auth;
+
 
 
 Route::resources([
@@ -51,19 +51,20 @@ Route::resources([
     'usuarito'   => UsuaritoController::class,
 ]);
 
-Route::resources([
-    'citatir'   => CitatirController::class,
-]);
+Route::resource(
+    'cita' , CitaController::class);
+
 Route::resources([
     'mascota'   => MascotaController::class,
 ]);
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', function () {
 
     return view('welcome');
 });
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -21,8 +21,10 @@
     
     <div class="mx-100px"  style="width: 200px" height="59px">
     <span class="btn btn-danger" href="{{ url('mascota/')}}">Cerrar sesion</a>
-    </button>
-
+    </button></div>
+<br>
+<div class="mx-auto"  style="width: 200px" height="100px">
+    <a class="btn btn-warning" href="{{ url('cita/')}}">Pagina de Inicio citas</a>
     </div>
     @if(Session::has('mensaje'))
     {{ Session::get('mensaje')}}
