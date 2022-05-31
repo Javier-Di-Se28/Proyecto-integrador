@@ -33,7 +33,7 @@ crossorigin="anonymous">
 
           <div>
            <label for="nombre">Nombre: </label>   
-            <input type="text" " style="background-color:white" class="form-control" name="nombre" value="{{ isset($forodudas->tipo)?$forodudas->tipo:''}}"
+            <input type="text" style="background-color:white" class="form-control" name="nombre" value="{{ isset($forodudas->tipo)?$forodudas->tipo:''}}"
              id="nombre"></div>
            </div>
 

@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Forodudas;
-use App\Http\Requests\StoreForodudasRequest;
-use App\Http\Requests\UpdateForodudasRequest;
+use Illuminate\Http\Request;
 
 class ForodudasController extends Controller
 {
 
     public function index()
     {
-        return view('forodudas.index')->with('forodudas', Forodudas::all());
+        $datos ['forodudas']=Forodudas::paginate(7);
+        return view('forodudas.index',$datos);
     }
 
 
@@ -21,7 +21,7 @@ class ForodudasController extends Controller
     }
 
 
-    public function store(StoreForodudasRequest $request)
+    public function store(Request $request)
     {
         $request->validate([
             'nombre'                 => 'required',
@@ -45,30 +45,30 @@ class ForodudasController extends Controller
     }
 
 
-    public function edit(Forodudas $forodudas)
+    public function edit($id)
     {
-        return view('forodudas.edit', compact('forodudas'));
+        $forodudas=Forodudas::findOrFail($id);
+
+        return view('forodudas.edit', compact('forodudas')) ;
     }
 
 
-    public function update(UpdateforodudasRequest $request, Forodudas $forodudas)
+    public function update(Request $request,$id)
     {
-        $request->validate([
-            'nombre'            => 'required',
-            'descripcion'       => 'required',
-            'fechaPublicacion'  => 'required'
-        ]);
+        $datosForodudas= request()->except(['_token','_method']);
+        forodudas::where('id',"=" , $id)->update($datosForodudas);
 
-        $forodudas->update($request->all());
-
-        return redirect()->route('forodudas.index');
+        $forodudas=Forodudas::findOrFail($id);
+           return view('forodudas.edit', compact('forodudas'));
     }
 
 
-    public function destroy(Forodudas $forodudas)
-    {
-        $forodudas->delete();
 
-        return redirect()->route('forodudas.index');
+    public function destroy($id)
+    {
+      Forodudas::destroy($id);
+      return redirect('forodudas')->with ( 'mensaje','Mascota borrada con exito');
+     
     }
+    
 }

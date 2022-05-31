@@ -71,6 +71,8 @@ crossorigin="anonymous">
 </nav>      
  </tr>
  @endforeach
+ 
 </body>
 </table>
+<a class="btn btn-warning"  href="{{ url('veterinaria/')}}">Inicio</a>
 </html>

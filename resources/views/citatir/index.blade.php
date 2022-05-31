@@ -28,11 +28,6 @@ crossorigin="anonymous">
     <a href="{{ url('citatir/create')}}" class="btn btn-success ">Registrar nueva cita</a> 
 
     <th> Num Registros: </th>
-                <th>Cita</th>
-                <th>Veterinaria</th>
-                <th>Duenio</th>
-                <th>Mascota</th>
-                <th>Motivo</th>
                 <th>Día</th>
                 <th>Hora</th>
                 <th>Opciones</th>
@@ -42,11 +37,6 @@ crossorigin="anonymous">
 @foreach($citatirs as $citatir)
 <tr>
                         <th>{{ $citatir->id }}</th>
-                        <th>{{ $citatir->idCita }}</th>
-                        <th>{{ $citatir->idVeterinaria }}</th>
-                        <th>{{ $citatir->idDuenio }}</th>
-                        <th>{{ $citatir->idMascota }}</th>
-                        <td>{{ $citatir->idMotivo }}</td>
                         <td>{{ $citatir->dia }}</td>
                         <td>{{ $citatir->hora }}</td>
                        

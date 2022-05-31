@@ -7,7 +7,7 @@
         <h1 style="font-size:30px; font-family:cursive;">
         registrar tu duda</h1>
        
-        <img src="https://cdn-icons-png.flaticon.com/512/35/35145.png" width="150px" height="80px"/>
+        <img src="https://cdn-icons-png.flaticon.com/512/35/35145.png" width="150px" height="150px"/>
     </section>
 
     <section class="section">
